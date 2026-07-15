@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | ブックマーク更新チェック</title>
+<style>
+  :root { color-scheme: light; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.8; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 24px; margin-bottom: 4px; }
+  h2 { font-size: 18px; margin-top: 36px; border-left: 4px solid #2d7dff; padding-left: 10px; }
+  .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+  ul { padding-left: 22px; }
+  a { color: #2d7dff; }
+  .lang-divider { margin: 56px 0; border: none; border-top: 2px solid #ddd; }
+  code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; font-size: 90%; }
+</style>
+</head>
+<body>
+
+<h1>ブックマーク更新チェック サポート</h1>
+
+<p>
+「ブックマーク更新チェック」の使い方やトラブルについては、以下をご確認ください。解決しない場合はお問い合わせください。
+</p>
+
+<h2>よくある質問</h2>
+<ul>
+  <li>
+    <strong>ブックマークはどうやって読み込みますか？</strong><br>
+    パソコンのブラウザ（Chrome / Safari など）の設定から、ブックマークを「HTMLファイルにエクスポート」します。そのファイルをAirDropやiCloud Driveでこのアプリを入れた端末に転送し、アプリ下部の「読み込み」ボタンから選択してください。
+  </li>
+  <li>
+    <strong>一部のブックマークに更新日が表示されません（「日付情報なし」）</strong><br>
+    更新日は、各サイトのページに更新日時の情報（<code>article:modified_time</code> などのメタ情報）が記載されている場合に読み取ります。その情報を公開していないサイトでは「日付情報なし」と表示されます。アプリの不具合ではありません。
+  </li>
+  <li>
+    <strong>「取得失敗」と表示されるものがあります</strong><br>
+    そのサイトが自動アクセスを制限している（例：Cloudflareなどのボット対策）場合や、一時的に接続できない場合に表示されます。実際のブラウザでは閲覧できても、アプリからの自動確認ではアクセスできないことがあります。
+  </li>
+  <li>
+    <strong>開いているページを1件だけ追加したいです</strong><br>
+    Safariで対象のページを開き、共有ボタンから「更新チェックへ登録」を選んでください。追加した時点では更新日は取得せず、次に「更新確認」を実行したときにまとめて取得します。
+  </li>
+  <li>
+    <strong>読み込んだブックマークや取得した情報はどこに保存されますか？</strong><br>
+    すべてお使いの端末内にのみ保存され、開発者を含む外部には送信されません。詳しくは<a href="index.html">プライバシーポリシー</a>をご確認ください。
+  </li>
+  <li>
+    <strong>バックグラウンドでも自動でチェックされますか？通知は届きますか？</strong><br>
+    iOSの「Appのバックグラウンド更新」が有効な場合、定期的に自動で更新を確認し、新しい更新が見つかると端末に通知でお知らせします。通知は「設定」→アプリ名から、バックグラウンド更新は「設定」→「一般」→「Appのバックグラウンド更新」から切り替えられます。
+  </li>
+</ul>
+
+<h2>お問い合わせ</h2>
+<p>
+上記で解決しない場合や不具合のご報告は、下記メールアドレスまでお願いいたします。お使いの端末（iPhone/iPad）・iOSのバージョン・発生した状況を添えていただけるとスムーズです。<br>
+<a href="mailto:s037585@gmail.com">s037585@gmail.com</a>
+</p>
+
+<hr class="lang-divider">
+
+<h1>Bookmark Update Checker Support</h1>
+
+<p>
+For help using Bookmark Update Checker, please check the FAQ below. If it doesn't resolve your issue, contact us.
+</p>
+
+<h2>Frequently Asked Questions</h2>
+<ul>
+  <li>
+    <strong>How do I import my bookmarks?</strong><br>
+    In your computer browser (Chrome / Safari, etc.), export your bookmarks to an HTML file. Transfer that file to your device via AirDrop or iCloud Drive, then tap the "Import" button at the bottom of the app and select it.
+  </li>
+  <li>
+    <strong>Some bookmarks show no update date ("No date info")</strong><br>
+    The App reads an update date only when a site publishes it on the page (metadata such as <code>article:modified_time</code>). Sites that don't publish this will show "No date info." This is not a bug.
+  </li>
+  <li>
+    <strong>Some items show "Failed to fetch"</strong><br>
+    This appears when a site restricts automated access (e.g., bot protection like Cloudflare) or is temporarily unreachable. A site you can view in a normal browser may still block the App's automated check.
+  </li>
+  <li>
+    <strong>How do I add a single page I'm viewing?</strong><br>
+    Open the page in Safari, tap the Share button, and choose "Add to Update Checker." The update date isn't fetched immediately; it's retrieved together with others the next time you run an update check.
+  </li>
+  <li>
+    <strong>Where are my bookmarks and fetched data stored?</strong><br>
+    Everything is stored only on your device and is never sent to the developer or anyone else. See our <a href="index.html">Privacy Policy</a> for details.
+  </li>
+  <li>
+    <strong>Does it check in the background? Will I get notifications?</strong><br>
+    When iOS Background App Refresh is enabled, the App periodically checks for updates and sends a local notification when new updates are found. Manage notifications in Settings → the app's name, and background refresh in Settings → General → Background App Refresh.
+  </li>
+</ul>
+
+<h2>Contact</h2>
+<p>
+If this doesn't resolve your issue, or to report a bug, please email us with your device model, iOS version, and what happened.<br>
+<a href="mailto:s037585@gmail.com">s037585@gmail.com</a>
+</p>
+
+</body>
+</html>
